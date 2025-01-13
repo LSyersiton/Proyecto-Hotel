@@ -26,11 +26,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>login_register</title>
 </head>
 <body>
-    <?php if (!empty($mensaje)): ?>
+    <?php if (!empty($mensaje)){ ?>
         <script>
             alert("<?php echo addslashes($mensaje); ?>");
         </script>
-    <?php endif; ?>
+    <?php  } ?>
 
     <!-- formulario registro  -->
     <div class="container register">
