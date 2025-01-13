@@ -89,7 +89,7 @@ class HuespedController {
                 $_SESSION['user_name'] = $usuario['nombre'];
                 return "Inicio de sesión exitoso. Bienvenido, " . $usuario['nombre'] . "!";
             } else {
-                return $password . " " . $password_db ;
+                return"La contraseña no es correcta";
             }
         } else {
             return "No se encontró un usuario con ese correo.";
